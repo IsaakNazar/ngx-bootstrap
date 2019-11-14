@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common'), require('rxjs')) :
     typeof define === 'function' && define.amd ? define('ngx-bootstrap/positioning', ['exports', '@angular/core', '@angular/common', 'rxjs'], factory) :
     (global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap'].positioning = {}), global.ng.core, global.ng.common, global.rxjs));
-}(this, function (exports, core, common, rxjs) { 'use strict';
+}(this, (function (exports, core, common, rxjs) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -87,7 +87,6 @@
                 return element.ownerDocument.body;
             case '#document':
                 return element.body;
-            default:
         }
         // Firefox want us to check `-x` and `-y` variations as well
         var _a = getStyleComputedProperty(element), overflow = _a.overflow, overflowX = _a.overflowX, overflowY = _a.overflowY;
@@ -1538,5 +1537,5 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-positioning.umd.js.map

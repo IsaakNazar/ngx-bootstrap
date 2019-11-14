@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('rxjs'), require('rxjs/operators')) :
     typeof define === 'function' && define.amd ? define('ngx-bootstrap/mini-ngrx', ['exports', 'rxjs', 'rxjs/operators'], factory) :
     (global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap']['mini-ngrx'] = {}), global.rxjs, global.rxjs.operators));
-}(this, function (exports, rxjs, operators) { 'use strict';
+}(this, (function (exports, rxjs, operators) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -179,5 +179,5 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-mini-ngrx.umd.js.map

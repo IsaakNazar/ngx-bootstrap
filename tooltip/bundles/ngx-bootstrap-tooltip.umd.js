@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ngx-bootstrap/utils'), require('ngx-bootstrap/component-loader'), require('ngx-bootstrap/positioning'), require('rxjs'), require('@angular/common')) :
     typeof define === 'function' && define.amd ? define('ngx-bootstrap/tooltip', ['exports', '@angular/core', 'ngx-bootstrap/utils', 'ngx-bootstrap/component-loader', 'ngx-bootstrap/positioning', 'rxjs', '@angular/common'], factory) :
     (global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap'].tooltip = {}), global.ng.core, global.utils, global.componentLoader, global.positioning, global.rxjs, global.ng.common));
-}(this, function (exports, core, utils, componentLoader, positioning, rxjs, common) { 'use strict';
+}(this, (function (exports, core, utils, componentLoader, positioning, rxjs, common) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -603,5 +603,5 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-tooltip.umd.js.map

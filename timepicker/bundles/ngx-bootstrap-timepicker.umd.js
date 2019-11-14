@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('rxjs'), require('ngx-bootstrap/mini-ngrx'), require('@angular/common')) :
     typeof define === 'function' && define.amd ? define('ngx-bootstrap/timepicker', ['exports', '@angular/core', '@angular/forms', 'rxjs', 'ngx-bootstrap/mini-ngrx', '@angular/common'], factory) :
     (global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap'].timepicker = {}), global.ng.core, global.ng.forms, global.rxjs, global.miniNgrx, global.ng.common));
-}(this, function (exports, core, forms, rxjs, miniNgrx, common) { 'use strict';
+}(this, (function (exports, core, forms, rxjs, miniNgrx, common) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -1237,5 +1237,5 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-timepicker.umd.js.map

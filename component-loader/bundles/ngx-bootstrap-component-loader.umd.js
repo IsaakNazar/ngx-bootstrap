@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ngx-bootstrap/utils'), require('ngx-bootstrap/positioning')) :
     typeof define === 'function' && define.amd ? define('ngx-bootstrap/component-loader', ['exports', '@angular/core', 'ngx-bootstrap/utils', 'ngx-bootstrap/positioning'], factory) :
     (global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap']['component-loader'] = {}), global.ng.core, global.utils, global.positioning));
-}(this, function (exports, core, utils, positioning) { 'use strict';
+}(this, (function (exports, core, utils, positioning) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -558,5 +558,5 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-component-loader.umd.js.map

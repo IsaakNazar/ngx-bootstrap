@@ -2,7 +2,7 @@
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('ngx-bootstrap/chronos'), require('ngx-bootstrap/utils'), require('ngx-bootstrap/accordion'), require('ngx-bootstrap/alert'), require('ngx-bootstrap/buttons'), require('ngx-bootstrap/carousel'), require('ngx-bootstrap/collapse'), require('ngx-bootstrap/datepicker'), require('ngx-bootstrap/modal'), require('ngx-bootstrap/dropdown'), require('ngx-bootstrap/pagination'), require('ngx-bootstrap/progressbar'), require('ngx-bootstrap/rating'), require('ngx-bootstrap/sortable'), require('ngx-bootstrap/tabs'), require('ngx-bootstrap/timepicker'), require('ngx-bootstrap/tooltip'), require('ngx-bootstrap/typeahead'), require('ngx-bootstrap/popover'), require('ngx-bootstrap/component-loader'), require('ngx-bootstrap/positioning'), require('ngx-bootstrap/mini-ngrx'), require('ngx-bootstrap/locale')) :
 	typeof define === 'function' && define.amd ? define('ngx-bootstrap', ['exports', 'ngx-bootstrap/chronos', 'ngx-bootstrap/utils', 'ngx-bootstrap/accordion', 'ngx-bootstrap/alert', 'ngx-bootstrap/buttons', 'ngx-bootstrap/carousel', 'ngx-bootstrap/collapse', 'ngx-bootstrap/datepicker', 'ngx-bootstrap/modal', 'ngx-bootstrap/dropdown', 'ngx-bootstrap/pagination', 'ngx-bootstrap/progressbar', 'ngx-bootstrap/rating', 'ngx-bootstrap/sortable', 'ngx-bootstrap/tabs', 'ngx-bootstrap/timepicker', 'ngx-bootstrap/tooltip', 'ngx-bootstrap/typeahead', 'ngx-bootstrap/popover', 'ngx-bootstrap/component-loader', 'ngx-bootstrap/positioning', 'ngx-bootstrap/mini-ngrx', 'ngx-bootstrap/locale'], factory) :
 	(global = global || self, factory(global['ngx-bootstrap'] = {}, global.chronos, global.utils, global.accordion, global.alert, global.buttons, global.carousel, global.collapse, global.datepicker, global.modal, global.dropdown, global.pagination, global.progressbar, global.rating, global.sortable, global.tabs, global.timepicker, global.tooltip, global.typeahead, global.popover, global.componentLoader, global.positioning, global.miniNgrx, global.locale));
-}(this, function (exports, chronos, utils, accordion, alert, buttons, carousel, collapse, datepicker, modal, dropdown, pagination, progressbar, rating, sortable, tabs, timepicker, tooltip, typeahead, popover, componentLoader, positioning, miniNgrx, locale) { 'use strict';
+}(this, (function (exports, chronos, utils, accordion, alert, buttons, carousel, collapse, datepicker, modal, dropdown, pagination, progressbar, rating, sortable, tabs, timepicker, tooltip, typeahead, popover, componentLoader, positioning, miniNgrx, locale) { 'use strict';
 
 	Object.defineProperty(exports, 'defineLocale', {
 		enumerable: true,
@@ -1033,5 +1033,5 @@
 
 	Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap.umd.js.map

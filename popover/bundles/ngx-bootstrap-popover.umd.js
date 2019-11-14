@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ngx-bootstrap/component-loader'), require('ngx-bootstrap/utils'), require('ngx-bootstrap/positioning'), require('@angular/common')) :
     typeof define === 'function' && define.amd ? define('ngx-bootstrap/popover', ['exports', '@angular/core', 'ngx-bootstrap/component-loader', 'ngx-bootstrap/utils', 'ngx-bootstrap/positioning', '@angular/common'], factory) :
     (global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap'].popover = {}), global.ng.core, global.componentLoader, global.utils, global.positioning, global.ng.common));
-}(this, function (exports, core, componentLoader, utils, positioning, common) { 'use strict';
+}(this, (function (exports, core, componentLoader, utils, positioning, common) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -332,5 +332,5 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-popover.umd.js.map

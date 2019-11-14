@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('rxjs/operators'), require('ngx-bootstrap/component-loader'), require('ngx-bootstrap/utils'), require('@angular/animations'), require('ngx-bootstrap/positioning')) :
     typeof define === 'function' && define.amd ? define('ngx-bootstrap/dropdown', ['exports', '@angular/core', 'rxjs/operators', 'ngx-bootstrap/component-loader', 'ngx-bootstrap/utils', '@angular/animations', 'ngx-bootstrap/positioning'], factory) :
     (global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap'].dropdown = {}), global.ng.core, global.rxjs.operators, global.componentLoader, global.utils, global.ng.animations, global.positioning));
-}(this, function (exports, core, operators, componentLoader, utils, animations, positioning) { 'use strict';
+}(this, (function (exports, core, operators, componentLoader, utils, animations, positioning) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -917,5 +917,5 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-dropdown.umd.js.map

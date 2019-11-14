@@ -60,7 +60,6 @@ function getScrollParent(element) {
             return element.ownerDocument.body;
         case '#document':
             return element.body;
-        default:
     }
     // Firefox want us to check `-x` and `-y` variations as well
     var _a = getStyleComputedProperty(element), overflow = _a.overflow, overflowX = _a.overflowX, overflowY = _a.overflowY;

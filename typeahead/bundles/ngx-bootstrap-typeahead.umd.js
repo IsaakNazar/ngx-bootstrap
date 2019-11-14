@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ngx-bootstrap/utils'), require('ngx-bootstrap/positioning'), require('@angular/animations'), require('rxjs/operators'), require('@angular/forms'), require('rxjs'), require('ngx-bootstrap/component-loader'), require('@angular/common')) :
     typeof define === 'function' && define.amd ? define('ngx-bootstrap/typeahead', ['exports', '@angular/core', 'ngx-bootstrap/utils', 'ngx-bootstrap/positioning', '@angular/animations', 'rxjs/operators', '@angular/forms', 'rxjs', 'ngx-bootstrap/component-loader', '@angular/common'], factory) :
     (global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap'].typeahead = {}), global.ng.core, global.utils, global.positioning, global.ng.animations, global.rxjs.operators, global.ng.forms, global.rxjs, global.componentLoader, global.ng.common));
-}(this, function (exports, core, utils, positioning, animations, operators, forms, rxjs, componentLoader, common) { 'use strict';
+}(this, (function (exports, core, utils, positioning, animations, operators, forms, rxjs, componentLoader, common) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -2286,5 +2286,5 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-typeahead.umd.js.map

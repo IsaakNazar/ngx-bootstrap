@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/animations'), require('@angular/core')) :
     typeof define === 'function' && define.amd ? define('ngx-bootstrap/collapse', ['exports', '@angular/animations', '@angular/core'], factory) :
     (global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap'].collapse = {}), global.ng.animations, global.ng.core));
-}(this, function (exports, animations, core) { 'use strict';
+}(this, (function (exports, animations, core) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -286,5 +286,5 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-collapse.umd.js.map

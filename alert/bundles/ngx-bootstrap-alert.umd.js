@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ngx-bootstrap/utils'), require('@angular/common')) :
     typeof define === 'function' && define.amd ? define('ngx-bootstrap/alert', ['exports', '@angular/core', 'ngx-bootstrap/utils', '@angular/common'], factory) :
     (global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap'].alert = {}), global.ng.core, global.utils, global.ng.common));
-}(this, function (exports, core, utils, common) { 'use strict';
+}(this, (function (exports, core, utils, common) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -201,5 +201,5 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-alert.umd.js.map

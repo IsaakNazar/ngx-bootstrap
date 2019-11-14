@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core')) :
     typeof define === 'function' && define.amd ? define('ngx-bootstrap/utils', ['exports', '@angular/core'], factory) :
     (global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap'].utils = {}), global.ng.core));
-}(this, function (exports, core) { 'use strict';
+}(this, (function (exports, core) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -271,32 +271,6 @@
     var win = (typeof window !== 'undefined' && window) || (/** @type {?} */ ({}));
     /** @type {?} */
     var document$1 = win.document;
-    /** @type {?} */
-    var location = win.location;
-    /** @type {?} */
-    var gc = win.gc ? (/**
-     * @return {?}
-     */
-    function () { return win.gc(); }) : (/**
-     * @return {?}
-     */
-    function () { return null; });
-    /** @type {?} */
-    var performance = win.performance ? win.performance : null;
-    /** @type {?} */
-    var Event = win.Event;
-    /** @type {?} */
-    var MouseEvent = win.MouseEvent;
-    /** @type {?} */
-    var KeyboardEvent = win.KeyboardEvent;
-    /** @type {?} */
-    var EventTarget = win.EventTarget;
-    /** @type {?} */
-    var History = win.History;
-    /** @type {?} */
-    var Location = win.Location;
-    /** @type {?} */
-    var EventListener = win.EventListener;
 
     /**
      * @fileoverview added by tsickle
@@ -953,5 +927,5 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-utils.umd.js.map

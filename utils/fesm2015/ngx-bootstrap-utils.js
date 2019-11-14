@@ -262,32 +262,6 @@ function registerEscClick(renderer, options) {
 const win = (typeof window !== 'undefined' && window) || (/** @type {?} */ ({}));
 /** @type {?} */
 const document$1 = win.document;
-/** @type {?} */
-const location = win.location;
-/** @type {?} */
-const gc = win.gc ? (/**
- * @return {?}
- */
-() => win.gc()) : (/**
- * @return {?}
- */
-() => null);
-/** @type {?} */
-const performance = win.performance ? win.performance : null;
-/** @type {?} */
-const Event = win.Event;
-/** @type {?} */
-const MouseEvent = win.MouseEvent;
-/** @type {?} */
-const KeyboardEvent = win.KeyboardEvent;
-/** @type {?} */
-const EventTarget = win.EventTarget;
-/** @type {?} */
-const History = win.History;
-/** @type {?} */
-const Location = win.Location;
-/** @type {?} */
-const EventListener = win.EventListener;
 
 /**
  * @fileoverview added by tsickle

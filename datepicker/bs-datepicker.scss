@@ -7,7 +7,7 @@
   align-items: stretch;
   flex-flow: row wrap;
   background: $main-bg;
-  box-shadow: 0 0 10px 0 $main-box-shadow;
+  //box-shadow: 0 0 10px 0 $main-box-shadow;
   position: relative;
   z-index: 1;
 
@@ -19,6 +19,10 @@
 
   bs-day-picker {
     float: left;
+  }
+
+  bs-days-calendar-view {
+    box-shadow: 0px 3px 8px rgba(82, 96, 102, 0.15), 0px 1px 3px rgba(184, 187, 190, 0.2);
   }
 
   /* button */
@@ -36,9 +40,13 @@
     outline: none;
   }
 
+  .month-year {
+    display: inline-flex;
+  }
+
   /* .bs-datepicker-head */
   &-head {
-    min-width: 270px;
+    min-width: 310px;
     height: 50px;
     padding: 10px;
     border-radius: 3px 3px 0 0;
@@ -62,7 +70,8 @@
       background: transparent;
       text-align: center;
       cursor: pointer;
-      color: $font-color-01;
+      color: $font-color-03;
+      font-weight: 600;
       transition: 0.3s;
 
       &[disabled],
@@ -93,7 +102,7 @@
       &.current {
         border-radius: 15px;
         max-width: 155px;
-        padding: 0 13px;
+        padding: 1px 3px;
       }
     }
   }
@@ -101,21 +110,29 @@
   &-head {
     button {
       &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
+        color: rgba(0, 0, 0, 0.9);
       }
       &:active {
-        background-color: rgba(0, 0, 0, 0.2);
+        color: rgba(0, 0, 0, 0.9);
+      }
+
+      svg {
+        fill: #C7C9C9;
+
+        &:hover {
+          fill: grey;
+        }
       }
     }
   }
 
   /* .bs-datepicker-body */
   &-body {
-    padding: 10px;
+    padding: 2px 18px;
     border-radius: 0 0 3px 3px;
     min-height: 232px;
     min-width: 278px;
-    border: 1px solid $border-color;
+    //border: 1px solid $border-color;
 
     .days.weeks {
       position: relative;
@@ -126,11 +143,11 @@
     table {
       width: 100%;
       border-collapse: separate;
-      border-spacing: 0;
+      //border-spacing: 0;
 
       th {
-        font-size: 13px;
-        color: $font-color-02;
+        font-size: 14px;
+        color: $font-color-03;
         font-weight: 400;
         text-align: center;
       }
@@ -144,8 +161,8 @@
         span {
           display: block;
           margin: 0 auto;
-          font-size: 13px;
-          border-radius: 50%;
+          font-size: 14px;
+          border-radius: 2px;
           position: relative;
           /*z-index: 1;*/
           -moz-user-select: none;
@@ -161,6 +178,7 @@
         &.is-highlighted:not(.disabled):not(.selected) span,
         span.is-highlighted:not(.disabled):not(.selected) {
           background-color: $highlighted;
+          box-shadow: 0px 0px 0px 1px rgba(241,245,248,1);
           transition: 0s;
         }
 
@@ -178,12 +196,14 @@
 
         span.selected,
         &.selected span {
-          color: $font-color-01;
+          color: $font-color-03;
+          box-shadow: 0px 0px 0px 1px rgba(94,106,117,1);
         }
 
         span.is-other-month,
         &.is-other-month span {
           color: transparent;
+          //color: grey;
         }
 
         &.active {
@@ -219,10 +239,10 @@
           display: block;
           position: absolute;
           z-index: -1;
-          top: 6px;
-          bottom: 6px;
-          left: -2px;
-          right: -2px;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
           box-sizing: content-box;
           background: transparent;
         }
@@ -239,8 +259,10 @@
 
         span[class*="select-"],
         &[class*="select-"] span {
-          border-radius: 50%;
-          color: $font-color-01;
+          border-radius: 2px;
+          color: $font-color-03;
+          //border: 1px solid #5E6A75;
+          box-shadow: 0px 0px 0px 1px rgba(94,106,117,1);
         }
       }
 
@@ -251,13 +273,14 @@
           &.active:not(.select-start):before,
           &.in-range:not(.select-start):before {
             background: $highlighted;
+            box-shadow: 0px 0px 0px 1px rgba(241,245,248,1);
           }
         }
 
         span {
-          width: 32px;
-          height: 32px;
-          line-height: 32px;
+          width: 39px;
+          height: 34px;
+          line-height: 34px;
 
           &.select-start {
             z-index: 2;
@@ -370,7 +393,7 @@
     border-radius: 4px 0 0 4px;
 
     & + & {
-      margin-left: 10px;
+      margin-left: 1px;
     }
 
     .bs-datepicker {
@@ -404,7 +427,7 @@
 
   /* .bs-datepicker-btns */
   &-container {
-    padding: 15px;
+    //padding: 15px;
   }
 
   .bs-media-container {

@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/forms'), require('@angular/common')) :
     typeof define === 'function' && define.amd ? define('ngx-bootstrap/pagination', ['exports', '@angular/core', '@angular/forms', '@angular/common'], factory) :
     (global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap'].pagination = {}), global.ng.core, global.ng.forms, global.ng.common));
-}(this, function (exports, core, forms, common) { 'use strict';
+}(this, (function (exports, core, forms, common) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -868,5 +868,5 @@
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-pagination.umd.js.map

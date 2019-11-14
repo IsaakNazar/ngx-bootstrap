@@ -267,32 +267,6 @@ function registerEscClick(renderer, options) {
 var win = (typeof window !== 'undefined' && window) || (/** @type {?} */ ({}));
 /** @type {?} */
 var document$1 = win.document;
-/** @type {?} */
-var location = win.location;
-/** @type {?} */
-var gc = win.gc ? (/**
- * @return {?}
- */
-function () { return win.gc(); }) : (/**
- * @return {?}
- */
-function () { return null; });
-/** @type {?} */
-var performance = win.performance ? win.performance : null;
-/** @type {?} */
-var Event = win.Event;
-/** @type {?} */
-var MouseEvent = win.MouseEvent;
-/** @type {?} */
-var KeyboardEvent = win.KeyboardEvent;
-/** @type {?} */
-var EventTarget = win.EventTarget;
-/** @type {?} */
-var History = win.History;
-/** @type {?} */
-var Location = win.Location;
-/** @type {?} */
-var EventListener = win.EventListener;
 
 /**
  * @fileoverview added by tsickle

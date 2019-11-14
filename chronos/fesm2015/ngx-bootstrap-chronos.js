@@ -3793,7 +3793,7 @@ const obsOffsets = {
 // RFC 2822 regex: For details see https://tools.ietf.org/html/rfc2822#section-3.3
 // tslint:disable-next-line
 /** @type {?} */
-const rfc2822 = /^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|([+-]\d{4}))$/;
+const rfc2822 = /^(?:(M|T|W|T|F|S|S),?\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|([+-]\d{4}))$/;
 // date from iso format
 /**
  * @param {?} config
@@ -6001,7 +6001,7 @@ const enGbLocale = {
     months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
     monthsShort: 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_'),
     weekdays: 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
-    weekdaysShort: 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_'),
+    weekdaysShort: 'S_M_T_W_T_F_S'.split('_'),
     weekdaysMin: 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_'),
     longDateFormat: {
         LT: 'HH:mm',

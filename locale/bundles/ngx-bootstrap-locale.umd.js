@@ -2,7 +2,7 @@
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('ngx-bootstrap/chronos')) :
 	typeof define === 'function' && define.amd ? define('ngx-bootstrap/locale', ['exports', 'ngx-bootstrap/chronos'], factory) :
 	(global = global || self, factory((global['ngx-bootstrap'] = global['ngx-bootstrap'] || {}, global['ngx-bootstrap'].locale = {}), global.chronos));
-}(this, function (exports, chronos) { 'use strict';
+}(this, (function (exports, chronos) { 'use strict';
 
 	Object.defineProperty(exports, 'arLocale', {
 		enumerable: true,
@@ -247,5 +247,5 @@
 
 	Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=ngx-bootstrap-locale.umd.js.map
