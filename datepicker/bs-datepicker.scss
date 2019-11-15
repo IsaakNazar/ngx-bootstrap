@@ -147,9 +147,14 @@
 
       th {
         font-size: 14px;
-        color: $font-color-03;
+        color: $font-disabled;
         font-weight: 400;
         text-align: center;
+
+      }
+
+      .weekend-label {
+        color: $font-color-red;
       }
 
       td {
@@ -198,6 +203,11 @@
         &.selected span {
           color: $font-color-03;
           box-shadow: 0px 0px 0px 1px rgba(94,106,117,1);
+        }
+
+        span.weekends,
+        &.weekends span {
+          color: $font-color-red;
         }
 
         span.is-other-month,

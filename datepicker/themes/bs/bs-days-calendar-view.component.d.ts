@@ -1,7 +1,7 @@
-import { EventEmitter } from '@angular/core';
+import { EventEmitter, OnInit } from '@angular/core';
 import { BsDatepickerViewMode, BsNavigationDirection, BsNavigationEvent, CellHoverEvent, DatepickerRenderOptions, DaysCalendarViewModel, DayViewModel, WeekViewModel } from '../../models';
 import { BsDatepickerConfig } from '../../bs-datepicker.config';
-export declare class BsDaysCalendarViewComponent {
+export declare class BsDaysCalendarViewComponent implements OnInit {
     private _config;
     calendar: DaysCalendarViewModel;
     options: DatepickerRenderOptions;
@@ -10,6 +10,7 @@ export declare class BsDaysCalendarViewComponent {
     onSelect: EventEmitter<DayViewModel>;
     onHover: EventEmitter<CellHoverEvent>;
     onHoverWeek: EventEmitter<WeekViewModel>;
+    ngOnInit(): void;
     isWeekHovered: boolean;
     constructor(_config: BsDatepickerConfig);
     navigateTo(event: BsNavigationDirection): void;
