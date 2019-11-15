@@ -3631,12 +3631,6 @@ class BsDaysCalendarViewComponent {
         this.onHoverWeek = new EventEmitter();
     }
     /**
-     * @return {?}
-     */
-    ngOnInit() {
-        console.log('calendar', this.calendar);
-    }
-    /**
      * @param {?} event
      * @return {?}
      */
