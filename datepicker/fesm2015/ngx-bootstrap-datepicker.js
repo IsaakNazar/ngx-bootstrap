@@ -3580,15 +3580,14 @@ BsDatepickerNavigationViewComponent.decorators = [
 
       <div class="month-year"><button class="current"
               *ngIf="calendar.monthTitle"
-              type="button"
-              (click)="view('month')">
+              type="button">
           <span>{{ calendar.monthTitle }}</span>
       </button>
 
       &#8203;  <!-- zero-width space needed for correct alignement
                   with preserveWhitespaces: false in Angular -->
 
-      <button class="current" (click)="view('year')" type="button">
+      <button class="current" type="button">
           <span>{{ calendar.yearTitle }}</span>
       </button></div>
 
