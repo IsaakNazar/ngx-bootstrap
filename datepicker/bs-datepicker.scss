@@ -103,6 +103,7 @@
         border-radius: 15px;
         max-width: 155px;
         padding: 1px 3px;
+        cursor: default;
       }
     }
   }
@@ -325,6 +326,10 @@
               left: 0;
               width: 100%;
             }
+          }
+
+          th {
+            font-size: 12px;
           }
         }
       }

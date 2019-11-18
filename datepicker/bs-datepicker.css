@@ -81,7 +81,8 @@
       .bs-datepicker-head button.current {
         border-radius: 15px;
         max-width: 155px;
-        padding: 1px 3px; }
+        padding: 1px 3px;
+        cursor: default; }
   .bs-datepicker-head button:hover {
     color: rgba(0, 0, 0, 0.9); }
   .bs-datepicker-head button:active {
@@ -220,6 +221,8 @@
         border-radius: 3px 0 0 3px;
         left: 0;
         width: 100%; }
+      .bs-datepicker-body table.weeks tr th {
+        font-size: 12px; }
       .bs-datepicker-body table:not(.weeks) tr td:first-child:before {
         border-radius: 3px 0 0 3px; }
       .bs-datepicker-body table.years td span {

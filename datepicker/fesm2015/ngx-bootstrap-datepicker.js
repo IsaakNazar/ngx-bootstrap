@@ -3739,7 +3739,7 @@ BsDaysCalendarViewComponent.decorators = [
           <!--if show weeks-->
           <th *ngIf="options.showWeekNumbers"></th>
           <th *ngFor="let weekday of calendar.weekdays; let i = index"
-              aria-label="weekday" [class.weekend-label]="(i === 0 || i === 6)">{{ calendar.weekdays[i] }}
+              aria-label="weekday" [class.weekend-label]="(i === 0 || i === 6)">{{ calendar.weekdays[i][0] }}
           </th>
         </tr>
         </thead>
