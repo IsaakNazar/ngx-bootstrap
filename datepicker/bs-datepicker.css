@@ -123,6 +123,7 @@
           font-size: 14px;
           border-radius: 2px;
           position: relative;
+          font-weight: 400 !important;
           /*z-index: 1;*/
           -moz-user-select: none;
           -webkit-user-select: none;
